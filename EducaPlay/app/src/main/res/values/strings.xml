@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">EducaPlay</string>
+    <string name="ImagenNombreEducaPlay">Educa Play</string>
+    <string name="ImagenAvionInicio">Avion Inicio</string>
+    <string name="btn_estudiante_inicio">Estudiante</string>
+    <string name="btn_docente_inicio">Docente</string>
+    <string name="txv_inicio">¿Cómo deseas iniciar?</string>
+    <string name="txv_iniciar_sesion_usuario">Entrar en mi cuenta</string>
+    <string name="btn_iniciar_sesion">Inicia Sesion</string>
+    <string name="edt_correo">Introduce tu correo electrónico</string>
+    <string name="edt_contraseña">Introduce tu contraseña</string>
+    <string name="txv_no_tienes_cuenta">¿No tienes cuenta?</string>
+    <string name="txv_registrate">Regístrate</string>
+    <string name="ImagenBombillo">Imagen Bombillo</string>
+    <string name="ImagenCohete">Imagen Cohete</string>
+    <string name="txv_registra_tus_datos">¡Registra tus datos!</string>
+    <string name="edt_nombre">Introduce tu nombre</string>
+    <string name="edt_apellido">Introduce tu apellido</string>
+    <string name="edt_documento">Introduce tu documento de identidad</string>
+    <string name="btn_registrar_usuario">Registrate</string>
+    <string name="txv_quieres_unirte_como_docente">¿Quieres unirte como docente?</string>
+    <string name="txv_contactanos">Contactanos</string>
+    <string name="txv_llena_campos">A continuacion llena los siguientes campos.</string>
+    <string name="btn_enviar_datos">Enviar datos</string>
+    <string name="edt_el_nombre">Introduce el nombre</string>
+    <string name="edt_introduce_el_apellido">Introduce el apellido</string>
+    <string name="edt_el_correo">Introduce el correo electronico</string>
+    <string name="edt_el_documento">Introduce el documento de identidad</string>
+    <string name="edt_la_contraseña">Introduce la contraseña</string>
+    <string name="btn_registralo">Registralo</string>
+    <string name="txv_registra_nuevo_docente">Registra los datos del nuevo docente</string>
+    <string name="title_activity_menus_usuario">menus_usuario</string>
+    <string name="title_inicio">Inicio</string>
+    <string name="title_pruebas">Pruebas</string>
+    <string name="title_calificaciones">Calificaciones</string>
+    <string name="title_perfil">Perfil</string>
+</resources>

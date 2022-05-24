@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_inicio"
+        android:icon="@drawable/icono_inicio"
+        android:title="@string/title_inicio" />
+
+    <item
+        android:id="@+id/navigation_pruebas"
+        android:icon="@drawable/icono_pruebas"
+        android:title="@string/title_pruebas" />
+
+    <item
+        android:id="@+id/navigation_calificaciones"
+        android:icon="@drawable/icono_calificaciones"
+        android:title="@string/title_calificaciones" />
+
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@drawable/icono_perfil"
+        android:title="@string/title_perfil" />
+
+</menu>
