@@ -8,27 +8,16 @@
     tools:context=".Iniciar_sesion_usuario">
 
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="39dp"
-        android:layout_height="31dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/boton_atras"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="37dp" />
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="256dp"
         android:layout_height="138dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="135dp"
-        app:srcCompat="@drawable/imagen_bombillo"
-        android:contentDescription="@string/ImagenBombillo" />
+        android:layout_marginTop="13dp"
+        android:contentDescription="@string/ImagenBombillo"
+        app:srcCompat="@drawable/imagen_bombillo" />
+
 
     <TextView
         android:id="@+id/textView2"
@@ -36,9 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="263dp"
+        android:layout_marginTop="151dp"
         android:text="@string/txv_iniciar_sesion_usuario" />
-
 
     <EditText
         android:id="@+id/edt_documento"
@@ -46,7 +34,7 @@
         android:layout_height="35dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="353dp"
+        android:layout_marginBottom="116dp"
         android:background="@drawable/custom_edittext"
         android:drawableStart="@drawable/icono_persona"
         android:drawablePadding="5dp"
@@ -65,7 +53,7 @@
         android:layout_height="35dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="309dp"
+        android:layout_marginBottom="164dp"
         android:background="@drawable/custom_edittext"
         android:drawableStart="@drawable/icono_llave"
         android:drawablePadding="5dp"
@@ -84,7 +72,7 @@
         android:layout_height="35dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="204dp"
+        android:layout_marginBottom="73dp"
         android:background="@drawable/custom_button_rosa"
         android:text="@string/btn_iniciar_sesion"
         android:textColor="#FFFFFF"
@@ -97,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="77dp"
+        android:layout_marginBottom="16dp"
         android:gravity="center"
         android:orientation="vertical">
 
