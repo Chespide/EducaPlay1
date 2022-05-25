@@ -10,22 +10,20 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.UDEC.educaplay.databinding.FragmentNotificationsBinding;
+import com.UDEC.educaplay.databinding.FragmentCalificacionesBinding;
 
 public class CalificacionesFragment extends Fragment {
 
-    private FragmentNotificationsBinding binding;
+    private FragmentCalificacionesBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         CalificacionesViewModel calificacionesViewModel =
                 new ViewModelProvider(this).get(CalificacionesViewModel.class);
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        binding = FragmentCalificacionesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNotifications;
-        calificacionesViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

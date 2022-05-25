@@ -10,22 +10,20 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.UDEC.educaplay.databinding.FragmentDashboardBinding;
+import com.UDEC.educaplay.databinding.FragmentPruebasBinding;
 
 public class PruebasFragment extends Fragment {
 
-    private FragmentDashboardBinding binding;
+    private FragmentPruebasBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         PruebasViewModel pruebasViewModel =
                 new ViewModelProvider(this).get(PruebasViewModel.class);
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding = FragmentPruebasBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        pruebasViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
