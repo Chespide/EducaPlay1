@@ -62,7 +62,7 @@ public class Iniciar_docentes extends AppCompatActivity {
             } else {
                 try {
 
-                    String sql = "SELECT * FROM Usuarios WHERE Correo = '" + usuario.getText() + "' AND Pass = '" + contraseña.getText() + "' ";
+                    String sql = "SELECT * FROM Usuarios WHERE Documento = '" + usuario.getText() + "' AND Pass = '" + contraseña.getText() + "' ";
                     nombreusuario = usuario.getText().toString();
                     nom = "" + nombreusuario;
                     Statement stmt = con.createStatement();
