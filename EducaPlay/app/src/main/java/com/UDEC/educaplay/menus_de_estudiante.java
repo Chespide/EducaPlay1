@@ -20,20 +20,20 @@ public class menus_de_estudiante extends AppCompatActivity {
         setContentView(binding.getRoot());
         replaceFragment(new InicioEstudiantesFragment());
 
-        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
+        binding.bottomNavigationViewEstudiantes.setOnItemSelectedListener(item -> {
 
             switch (item.getItemId()){
 
-                case R.id.inicio:
+                case R.id.inicioestudiantes:
                     replaceFragment(new InicioEstudiantesFragment());
                     break;
-                case R.id.pruebas:
+                case R.id.pruebasestudiantes:
                     replaceFragment(new PruebasEstudiantesFragment());
                     break;
-                case R.id.calificaciones:
+                case R.id.calificacionesestudiantes:
                     replaceFragment(new CalificacionesEstudiantesFragment());
                     break;
-                case R.id.perfil:
+                case R.id.perfilestudiantes:
                     replaceFragment(new PerfilEstudiantesFragment());
                     break;
             }
@@ -45,7 +45,7 @@ public class menus_de_estudiante extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frame_layout, fragment);
+        fragmentTransaction.replace(R.id.frame_layout_estudiantes, fragment);
         fragmentTransaction.commit();
 
     }

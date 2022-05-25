@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menus_de_estudiante"
-    android:background="#FFFFFF">
-
+    android:background="#FFFFFF"
+    tools:context=".menus_de_docentes">
 
     <FrameLayout
-        android:id="@+id/frame_layout_estudiantes"
+        android:id="@+id/frame_layout_docentes"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationViewEstudiantes"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationViewDocentes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,13 +19,13 @@
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationViewEstudiantes"
+        android:id="@+id/bottomNavigationViewDocentes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:backgroundTint="#7846CC"
-        app:menu="@menu/bottom_nav_menu_estudiantes"/>
+        app:menu="@menu/bottom_nav_menu_docentes"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,17 +3,14 @@
 
     <item android:title="@string/title_inicio"
         android:icon="@drawable/icono_inicio"
-        android:id="@+id/inicioestudiantes"/>
+        android:id="@+id/iniciodocentes"/>
 
     <item android:title="@string/title_pruebas"
         android:icon="@drawable/icono_pruebas"
-        android:id="@+id/pruebasestudiantes"/>
-
-    <item android:title="@string/title_calificaciones"
-        android:icon="@drawable/icono_calificaciones"
-        android:id="@+id/calificacionesestudiantes"/>
+        android:id="@+id/pruebasdocentes"/>
 
     <item android:title="@string/title_perfil"
         android:icon="@drawable/icono_perfil"
-        android:id="@+id/perfilestudiantes"/>
+        android:id="@+id/perfildocentes"/>
+
 </menu>
