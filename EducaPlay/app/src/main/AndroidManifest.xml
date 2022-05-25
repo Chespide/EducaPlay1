@@ -16,6 +16,9 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".menus_de_estudiante"
+            android:exported="false" />
+        <activity
             android:name=".menus_usuario"
             android:exported="false"
             android:label="@string/title_activity_menus_usuario" />

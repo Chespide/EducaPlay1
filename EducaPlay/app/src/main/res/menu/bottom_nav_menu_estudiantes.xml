@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/title_inicio"
+        android:icon="@drawable/icono_inicio"
+        android:id="@+id/inicio"/>
+
+    <item android:title="@string/title_pruebas"
+        android:icon="@drawable/icono_pruebas"
+        android:id="@+id/pruebas"/>
+
+    <item android:title="@string/title_calificaciones"
+        android:icon="@drawable/icono_calificaciones"
+        android:id="@+id/calificaciones"/>
+
+    <item android:title="@string/title_perfil"
+        android:icon="@drawable/icono_perfil"
+        android:id="@+id/perfil"/>
+</menu>

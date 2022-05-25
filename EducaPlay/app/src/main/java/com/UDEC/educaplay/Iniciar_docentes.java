@@ -68,7 +68,7 @@ public class Iniciar_docentes extends AppCompatActivity {
                     if (rs.next()) {
                         runOnUiThread(() -> {
                             Toast.makeText(Iniciar_docentes.this, "Inicio de sesión exitoso", Toast.LENGTH_LONG).show();
-                            Intent intent = new Intent(Iniciar_docentes.this, menus_usuario.class);
+                            Intent intent = new Intent(Iniciar_docentes.this, menus_de_estudiante.class);
                             startActivity(intent);
                         });
                         z = "Success";
