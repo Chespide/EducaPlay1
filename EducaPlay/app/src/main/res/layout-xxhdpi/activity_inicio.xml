@@ -30,19 +30,19 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="-2dp"
+        android:contentDescription="@string/ImagenAvionInicio"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/imagen_avion_inicio"
-        android:contentDescription="@string/ImagenAvionInicio" />
+        app:srcCompat="@drawable/imagen_avion_inicio" />
 
     <Button
         android:layout_width="113dp"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="155dp"
+        android:layout_marginBottom="123dp"
         android:background="@drawable/custom_button"
         android:text="@string/btn_estudiante_inicio"
         android:textColor="#0B0A0A"
@@ -53,7 +53,7 @@
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="71dp"
+        android:layout_marginBottom="47dp"
         android:background="@drawable/custom_button"
         android:text="@string/btn_docente_inicio"
         android:textColor="#0B0A0A"
@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="238dp"
+        android:layout_marginBottom="198dp"
         android:text="@string/txv_inicio" />
 
 
