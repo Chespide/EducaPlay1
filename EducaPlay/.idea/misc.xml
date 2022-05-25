@@ -76,9 +76,15 @@
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_cardview_up.xml" value="0.2105" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_searchview.xml" value="0.2105" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/icono_buscar.xml" value="0.2115" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout-hdpi/activity_iniciar_sesion_usuario.xml" value="0.153125" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_iniciar_sesion_usuario.xml" value="1.225" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout-mdpi/activity_iniciar_sesion_usuario.xml" value="0.8166666666666667" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout-xhdpi/activity_iniciar_sesion_usuario.xml" value="0.19140625" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout-xxhdpi/activity_iniciar_sesion_usuario.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout-xxxhdpi/activity_iniciar_docentes.xml" value="0.1171448087431694" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_iniciar_sesion_usuario.xml" value="0.15534420289855072" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_menus_usuario.xml" value="0.16" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_registro_usuario.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_calificaciones.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_inicio.xml" value="0.2" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_perfil.xml" value="0.1675213675213675" />
@@ -86,7 +92,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
