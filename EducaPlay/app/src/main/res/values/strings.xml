@@ -44,4 +44,9 @@
     <string name="txv_correctas">Correctas:</string>
     <string name="txv_incorrectas">Incorrectas:</string>
     <string name="txv_puntaje">Puntaje:</string>
+    <string name="txv_nombre">Nombre:</string>
+    <string name="txv_correo">Correo:</string>
+    <string name="txv_ciudad">Ciudad:</string>
+    <string name="btn_cambiar_contrasenia">Cambiar contraseña</string>
+    <string name="btn_cambiar_foto_de_perfil">Cambiar foto de perfil</string>
 </resources>
