@@ -35,4 +35,6 @@
     <string name="title_calificaciones">Calificaciones</string>
     <string name="title_perfil">Perfil</string>
     <string name="edtx_buscar" tools:ignore="TypographyEllipsis">Buscar...</string>
+    <string name="edtx_tipos_de_datos">Tipos de datos</string>
+    <string name="edtx_lorem_ipsum">lorem ipsum</string>
 </resources>
