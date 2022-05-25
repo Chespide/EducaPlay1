@@ -37,4 +37,5 @@
     <string name="edtx_buscar" tools:ignore="TypographyEllipsis">Buscar...</string>
     <string name="edtx_tipos_de_datos">Tipos de datos</string>
     <string name="edtx_lorem_ipsum">lorem ipsum</string>
+    <string name="txv_escoge_el_nivel_de_la_prueba">Escoge el nivel de la prueba</string>
 </resources>
