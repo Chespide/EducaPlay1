@@ -34,7 +34,7 @@
         android:text="@string/txv_registra_nuevo_docente" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/nombre_docente"
         android:layout_width="240dp"
         android:layout_height="35dp"
         android:layout_alignParentTop="true"
@@ -53,10 +53,10 @@
         tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/apellido_docente"
         android:layout_width="240dp"
         android:layout_height="35dp"
-        android:layout_below="@+id/editTextTextPersonName"
+        android:layout_below="@+id/nombre_docente"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@drawable/custom_edittext"
@@ -72,10 +72,10 @@
         tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/correo_docente"
         android:layout_width="240dp"
         android:layout_height="35dp"
-        android:layout_below="@+id/editTextTextPersonName2"
+        android:layout_below="@+id/apellido_docente"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@drawable/custom_edittext"
@@ -91,10 +91,10 @@
         tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/codigo_docente"
         android:layout_width="240dp"
         android:layout_height="35dp"
-        android:layout_below="@+id/editTextTextEmailAddress2"
+        android:layout_below="@+id/correo_docente"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@drawable/custom_edittext"
@@ -110,10 +110,10 @@
         tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/pass_docente"
         android:layout_width="240dp"
         android:layout_height="35dp"
-        android:layout_below="@+id/editTextNumber"
+        android:layout_below="@+id/codigo_docente"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@drawable/custom_edittext"
@@ -129,10 +129,10 @@
         tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnregistrardocente"
         android:layout_width="240dp"
         android:layout_height="35dp"
-        android:layout_below="@+id/editTextTextPassword2"
+        android:layout_below="@+id/pass_docente"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -142,6 +142,7 @@
         android:textColor="#FFFFFF"
         android:textSize="10sp"
         app:backgroundTint="@null"
+        android:onClick="registrarsedocente"
         tools:ignore="SmallSp,TextContrastCheck,TouchTargetSizeCheck" />
 
 

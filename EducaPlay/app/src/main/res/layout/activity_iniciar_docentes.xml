@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#531EA0"
-    tools:context=".Iniciar_sesion_usuario">
+    tools:context=".Iniciar_docentes">
 
 
     <ImageView
@@ -29,7 +29,7 @@
 
 
     <EditText
-        android:id="@+id/edt_documento"
+        android:id="@+id/usuario_docente"
         android:layout_width="220dp"
         android:layout_height="35dp"
         android:layout_alignParentBottom="true"
@@ -48,7 +48,7 @@
         tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/pass_docente"
         android:layout_width="220dp"
         android:layout_height="35dp"
         android:layout_alignParentBottom="true"
@@ -67,7 +67,7 @@
         tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btniniciardocente"
         android:layout_width="160dp"
         android:layout_height="35dp"
         android:layout_alignParentBottom="true"
@@ -101,6 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="nuevodocente"
             android:text="@string/txv_contactanos" />
     </LinearLayout>
 
