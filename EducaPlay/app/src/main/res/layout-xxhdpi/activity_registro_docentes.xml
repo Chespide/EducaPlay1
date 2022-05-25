@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#531EA0"
-    tools:context=".Registro_usuario">
+    tools:context=".Registro_docentes">
 
 
     <ImageView

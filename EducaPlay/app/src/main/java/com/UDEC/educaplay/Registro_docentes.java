@@ -27,11 +27,11 @@ public class Registro_docentes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro_docentes);
-        nom = (EditText) nom.findViewById(R.id.nombre_docente);
-        ape = (EditText) ape.findViewById(R.id.apellido_docente);
-        correo = (EditText) correo.findViewById(R.id.correo_docente);
-        cod = (EditText) cod.findViewById(R.id.codigo_docente);
-        contra = (EditText) contra.findViewById(R.id.pass_usuario);
+        nom = (EditText) findViewById(R.id.nombre_docente);
+        ape = (EditText) findViewById(R.id.apellido_docente);
+        correo = (EditText) findViewById(R.id.correo_docente);
+        cod = (EditText) findViewById(R.id.codigo_docente);
+        contra = (EditText) findViewById(R.id.pass_docente);
         btnregistrarse = (Button) findViewById(R.id.btnregistrardocente);
         pasarusu = correo.getText().toString().trim();
         rol = "3";
