@@ -22,9 +22,8 @@ public class InicioFragment extends Fragment {
                 new ViewModelProvider(this).get(InicioViewModel.class);
 
         binding = FragmentInicioBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
 
-        return root;
+        return binding.getRoot();
     }
 
     @Override

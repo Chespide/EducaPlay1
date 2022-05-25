@@ -19,7 +19,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class Iniciar_docentes extends AppCompatActivity {
-    EditText usuario, contraseña;
+    EditText usuario, contrasenia;
     Button iniciar_sesion;
     Connection con;
     String nombreusuario, nom;
@@ -28,17 +28,15 @@ public class Iniciar_docentes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iniciar_docentes);
-        usuario = (EditText) findViewById(R.id.usuario_docente);
-        contraseña = (EditText) findViewById(R.id.pass_docente);
-        iniciar_sesion = (Button) findViewById(R.id.btniniciardocente);
-        iniciar_sesion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                new checkLogin().execute("");
-                finish();
-            }
+        usuario = findViewById(R.id.usuario_docente);
+        contrasenia = findViewById(R.id.pass_docente);
+        iniciar_sesion = findViewById(R.id.btniniciardocente);
+        iniciar_sesion.setOnClickListener(view -> {
+            new checkLogin().execute("");
+            finish();
         });
     }
+    @SuppressLint("StaticFieldLeak")
     public class checkLogin extends AsyncTask<String, String, String> {
 
         String z = null;
@@ -56,39 +54,34 @@ public class Iniciar_docentes extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... strings) {
-            con = conexionBD(ConnectionClass.rol.toString(),ConnectionClass.nom.toString(), ConnectionClass.ape.toString(), ConnectionClass.correo.toString(), ConnectionClass.correo.toString(), ConnectionClass.contra.toString());
-            if (con == null) {
+            con = conexionBD(ConnectionClass.rol, ConnectionClass.nom, ConnectionClass.ape, ConnectionClass.correo, ConnectionClass.correo, ConnectionClass.contra);
+            if (con == null)
                 Toast.makeText(Iniciar_docentes.this, "Revisa tu conexion", Toast.LENGTH_LONG).show();
-            } else {
+            else {
                 try {
 
-                    String sql = "SELECT * FROM Usuarios WHERE Documento = '" + usuario.getText() + "' AND Pass = '" + contraseña.getText() + "' ";
+                    String sql = "SELECT * FROM Usuarios WHERE Documento = '" + usuario.getText() + "' AND Pass = '" + contrasenia.getText() + "' ";
                     nombreusuario = usuario.getText().toString();
                     nom = "" + nombreusuario;
                     Statement stmt = con.createStatement();
                     ResultSet rs = stmt.executeQuery(sql);
                     if (rs.next()) {
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                Toast.makeText(Iniciar_docentes.this, "Inicio de sesión exitoso", Toast.LENGTH_LONG).show();
-                            }
+                        runOnUiThread(() -> {
+                            Toast.makeText(Iniciar_docentes.this, "Inicio de sesión exitoso", Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(Iniciar_docentes.this, menus_usuario.class);
+                            startActivity(intent);
                         });
                         z = "Success";
-                        Intent intent = new Intent(Iniciar_docentes.this, menus_usuario.class);
-                        startActivity(intent);
+
                         finish();
                     } else {
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                Toast.makeText(Iniciar_docentes.this, "Revisa tu usuario o contraseña", Toast.LENGTH_LONG).show();
-                                Intent intent = new Intent(Iniciar_docentes.this, Iniciar_docentes.class);
-                                startActivity(intent);
-                            }
+                        runOnUiThread(() -> {
+                            Toast.makeText(Iniciar_docentes.this, "Revisa tu usuario o contraseña", Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(Iniciar_docentes.this, Iniciar_docentes.class);
+                            startActivity(intent);
                         });
                         usuario.setText("");
-                        contraseña.setText("");
+                        contrasenia.setText("");
                     }
 
                 } catch (Exception e) {

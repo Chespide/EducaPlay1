@@ -22,9 +22,8 @@ public class CalificacionesFragment extends Fragment {
                 new ViewModelProvider(this).get(CalificacionesViewModel.class);
 
         binding = FragmentCalificacionesBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
 
-        return root;
+        return binding.getRoot();
     }
 
     @Override
