@@ -72,6 +72,7 @@
         <entry key="..\:/Users/Johan Lozano/AndroidStudioProjects/EducaPlay/app/src/main/res/layout/fragment_perfil.xml" value="0.1526268115942029" />
         <entry key="..\:/Users/Johan Lozano/AndroidStudioProjects/EducaPlay/app/src/main/res/layout/fragment_pruebas.xml" value="0.16" />
         <entry key="..\:/Users/Johan Lozano/AndroidStudioProjects/EducaPlay/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1185" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_button.xml" value="0.143" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_button_perfil.xml" value="0.143" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_cardview_down.xml" value="0.1365" />
@@ -82,6 +83,8 @@
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_cardview_up_perf.xml" value="0.143" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_imageview.xml" value="0.208" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_searchview.xml" value="0.2105" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1185" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/icono_buscar.xml" value="0.2115" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/icono_calificaciones.xml" value="0.143" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/icono_inicio.xml" value="0.143" />
@@ -107,6 +110,8 @@
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_pruebas_estudiantes.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/menu/bottom_nav_menu_estudiantes.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>

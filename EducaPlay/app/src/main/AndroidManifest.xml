@@ -19,10 +19,6 @@
             android:name=".menus_de_estudiante"
             android:exported="false" />
         <activity
-            android:name=".menus_usuario"
-            android:exported="false"
-            android:label="@string/title_activity_menus_usuario" />
-        <activity
             android:name=".Registro_docentes"
             android:exported="false" />
         <activity

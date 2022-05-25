@@ -76,7 +76,7 @@ public class Iniciar_sesion_usuario extends AppCompatActivity {
                             }
                         });
                         z = "Success";
-                        Intent intent = new Intent(Iniciar_sesion_usuario.this, menus_usuario.class);
+                        Intent intent = new Intent(Iniciar_sesion_usuario.this, menus_de_estudiante.class);
                         startActivity(intent);
                         finish();
                     } else {

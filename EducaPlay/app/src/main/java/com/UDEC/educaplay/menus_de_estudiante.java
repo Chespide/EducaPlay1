@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 
 import com.UDEC.educaplay.databinding.ActivityMenusDeEstudianteBinding;
-import com.UDEC.educaplay.ui.inicio.InicioFragment;
 
 public class menus_de_estudiante extends AppCompatActivity {
 
