@@ -67,4 +67,19 @@
     <string name="btn_respuesta_c">C:</string>
     <string name="btn_respuesta_d">D:</string>
     <string name="btn_siguiente">Siguiente</string>
+    <string name="txv_titulo">Titulo:</string>
+    <string name="edtx_titulo">...</string>
+    <string name="txv_descripcion">Descripcion:</string>
+    <string name="btn_insertar_imagen">Insertar Imagen</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_crear">Crear</string>
+    <string name="txv_pregunta">Pregunta:</string>
+    <string name="txv_respuesta_a">Respuesta A:</string>
+    <string name="txv_respuesta_b">Respuesta B:</string>
+    <string name="txv_respuesta_c">Respuesta C:</string>
+    <string name="txv_respuesta_d">Respuesta D:</string>
+    <string name="chb_a">A</string>
+    <string name="chb_b">B</string>
+    <string name="chb_c">C</string>
+    <string name="chb_d">D</string>
 </resources>

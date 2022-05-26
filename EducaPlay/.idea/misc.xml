@@ -81,6 +81,7 @@
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_cardview_up.xml" value="0.2105" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_cardview_up_cal.xml" value="0.1545" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_cardview_up_perf.xml" value="0.143" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_checkbox.xml" value="0.2105" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_imageview.xml" value="0.208" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_searchview.xml" value="0.2105" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/cutom_card.xml" value="0.1315" />
@@ -108,6 +109,8 @@
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_inicio.xml" value="0.2" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_inicio_docentes.xml" value="0.16" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_inicio_estudiantes.xml" value="0.18" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_nueva_entrada_docentes.xml" value="0.16" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_nueva_pregunta_docentes.xml" value="0.2" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_perfil.xml" value="0.1" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_perfil_docentes.xml" value="0.18" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_perfil_estudiantes.xml" value="0.1675213675213675" />
