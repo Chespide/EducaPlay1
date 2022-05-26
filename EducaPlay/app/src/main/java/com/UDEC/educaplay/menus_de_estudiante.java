@@ -19,10 +19,14 @@ public class menus_de_estudiante extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMenusDeEstudianteBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
         Bundle bundle = getIntent().getExtras();
         String documentousuario = bundle.getString("Documento");
+        String id_Usuario = bundle.getString("id");
         Bundle args = new Bundle();
         args.putString("Documento", documentousuario);
+        args.putString("id", id_Usuario);
+
         replaceFragment(new InicioEstudiantesFragment(), args);
 
         binding.bottomNavigationViewEstudiantes.setOnItemSelectedListener(item -> {

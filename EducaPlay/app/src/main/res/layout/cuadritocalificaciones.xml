@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/custom_cardview_up_cal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/txv_prueba_nivel"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_cardview_down_cal"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cantidadpreguntas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/txv_cantidad_de_preguntas"
+                android:textColor="#757575" />
+
+            <TextView
+                android:id="@+id/correctas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/txv_correctas"
+                android:textColor="#757575" />
+
+            <TextView
+                android:id="@+id/incorrectas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/txv_incorrectas"
+                android:textColor="#757575" />
+
+            <TextView
+                android:id="@+id/puntaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="105dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/txv_puntaje"
+                android:textColor="#757575" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/ImagenNombreEducaPlay"
+            android:src="@drawable/imagen_medalla" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,42 +1,41 @@
 package com.UDEC.educaplay;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.os.StrictMode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link NuevaEntradaDocentesFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLDataException;
+import java.sql.SQLException;
+
 public class NuevaEntradaDocentesFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    EditText titulo, descripcion, texto;
+    Button btnnuevaentrada;
+    String nivel;
+
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private String id_Usuario;
 
     public NuevaEntradaDocentesFragment() {
-        // Required empty public constructor
+
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment NuevaEntradaDocentesFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static NuevaEntradaDocentesFragment newInstance(String param1, String param2) {
         NuevaEntradaDocentesFragment fragment = new NuevaEntradaDocentesFragment();
         Bundle args = new Bundle();
@@ -52,13 +51,58 @@ public class NuevaEntradaDocentesFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+            id_Usuario = getArguments().getString("id");
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_nueva_entrada_docentes, container, false);
+        View view = inflater.inflate(R.layout.fragment_inicio_docentes, container, false);
+        titulo = view.findViewById(R.id.entradatitulo);
+        descripcion = view.findViewById(R.id.entradadescripcion);
+        texto = view.findViewById(R.id.entradatexto);
+        nivel = "1";
+        /*btnnuevaentrada = (Button) view.findViewById(R.id.btncrearentrada);
+        btnnuevaentrada.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nuevaentrada();
+                Intent btnnuevaentrada = new Intent(getActivity(), InicioDocentesFragment.class);
+                startActivity(btnnuevaentrada);
+            }
+        });*/
+
+
+        return view;
+    }
+    public Connection conexionBD(){
+        Connection conexion = null;
+        try {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+            Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
+            conexion = DriverManager.getConnection("jdbc:jtds:sqlserver://gutgara.ddns.net;databaseName=EducaPlay;user=gutgara;password=VAuX2v_1xx0_T9w;");
+
+        }catch (Exception e){
+            Toast.makeText(getContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
+        }
+        return conexion;
+    }
+    public void nuevaentrada(){
+        try{
+            PreparedStatement pst = conexionBD().prepareStatement("insert into Entradas values(?,?,?,?,?,?)");
+            pst.setString(1,nivel);
+            pst.setString(2,id_Usuario);
+            pst.setString(3,titulo.getText().toString());
+            pst.setString(4,descripcion.getText().toString());
+            pst.setString(5,texto.getText().toString());
+            pst.executeUpdate();
+            Toast.makeText(getContext(),"REGISTRO AGREGADO CORRECTAMENTE",Toast.LENGTH_SHORT).show();
+        }catch (SQLDataException e){
+            Toast.makeText(getContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
     }
 }

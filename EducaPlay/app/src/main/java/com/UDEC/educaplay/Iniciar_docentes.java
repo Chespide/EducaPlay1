@@ -3,6 +3,7 @@ package com.UDEC.educaplay;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.ActivityManager;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -66,19 +67,30 @@ public class Iniciar_docentes extends AppCompatActivity {
                     Statement stmt = con.createStatement();
                     ResultSet rs = stmt.executeQuery(sql);
                     if (rs.next()) {
-                        runOnUiThread(() -> {
-                            Toast.makeText(Iniciar_docentes.this, "Inicio de sesión exitoso", Toast.LENGTH_LONG).show();
-                            Intent intent = new Intent(Iniciar_docentes.this, menus_de_estudiante.class);
-                            startActivity(intent);
+                        String id_Usuario = rs.getString(1);
+                        String documentousuario = rs.getString(5);
+                        Bundle bundle = new Bundle();
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(Iniciar_docentes.this, "Inicio de sesión exitoso", Toast.LENGTH_LONG).show();
+                            }
                         });
                         z = "Success";
-
+                        Intent intent = new Intent(Iniciar_docentes.this, menus_de_docentes.class);
+                        bundle.putString("Documento", documentousuario);
+                        bundle.putString("id",id_Usuario);
+                        intent.putExtras(bundle);
+                        startActivity(intent);
                         finish();
                     } else {
-                        runOnUiThread(() -> {
-                            Toast.makeText(Iniciar_docentes.this, "Revisa tu usuario o contraseña", Toast.LENGTH_LONG).show();
-                            Intent intent = new Intent(Iniciar_docentes.this, Iniciar_docentes.class);
-                            startActivity(intent);
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(Iniciar_docentes.this, "Revisa tu usuario o contraseña", Toast.LENGTH_LONG).show();
+                                Intent intent = new Intent(Iniciar_docentes.this, Iniciar_docentes.class);
+                                startActivity(intent);
+                            }
                         });
                         usuario.setText("");
                         contrasenia.setText("");

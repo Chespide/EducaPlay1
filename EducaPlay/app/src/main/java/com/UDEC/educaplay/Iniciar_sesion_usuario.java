@@ -69,6 +69,7 @@ public class Iniciar_sesion_usuario extends AppCompatActivity {
                     Statement stmt = con.createStatement();
                     ResultSet rs = stmt.executeQuery(sql);
                     if (rs.next()) {
+                        String id_Usuario = rs.getString(1);
                         String documentousuario = rs.getString(5);
                         Bundle bundle = new Bundle();
                         runOnUiThread(new Runnable() {
@@ -80,6 +81,7 @@ public class Iniciar_sesion_usuario extends AppCompatActivity {
                         z = "Success";
                         Intent intent = new Intent(Iniciar_sesion_usuario.this, menus_de_estudiante.class);
                         bundle.putString("Documento", documentousuario);
+                        bundle.putString("id",id_Usuario);
                         intent.putExtras(bundle);
                         startActivity(intent);
                         finish();
