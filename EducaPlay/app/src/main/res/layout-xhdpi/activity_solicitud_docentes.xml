@@ -136,7 +136,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="460dp"
         android:background="@drawable/custom_button_rosa"
         android:text="@string/btn_enviar_datos"
         android:textColor="#FFFFFF"
