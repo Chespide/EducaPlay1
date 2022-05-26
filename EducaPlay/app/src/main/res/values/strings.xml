@@ -60,4 +60,5 @@
     <string name="txv_correcta">Correcta:</string>
     <string name="btn_nueva_pregunta">Nueva pregunta</string>
     <string name="btn_editar_mis_preguntas">Editar mis preguntas</string>
+    <string name="btn_aniadir_a_alguien_como_docente">Añadir a alguien como docente</string>
 </resources>
