@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.UDEC.educaplay.databinding.ActivityMenusDeEstudianteBinding;
 
@@ -18,31 +19,36 @@ public class menus_de_estudiante extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMenusDeEstudianteBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new InicioEstudiantesFragment());
+        Bundle bundle = getIntent().getExtras();
+        String documentousuario = bundle.getString("Documento");
+        Bundle args = new Bundle();
+        args.putString("Documento", documentousuario);
+        replaceFragment(new InicioEstudiantesFragment(), args);
 
         binding.bottomNavigationViewEstudiantes.setOnItemSelectedListener(item -> {
 
             switch (item.getItemId()){
 
                 case R.id.inicioestudiantes:
-                    replaceFragment(new InicioEstudiantesFragment());
+                    replaceFragment(new InicioEstudiantesFragment(), args);
                     break;
                 case R.id.pruebasestudiantes:
-                    replaceFragment(new PruebasEstudiantesFragment());
+                    replaceFragment(new PruebasEstudiantesFragment(), args);
                     break;
                 case R.id.calificacionesestudiantes:
-                    replaceFragment(new CalificacionesEstudiantesFragment());
+                    replaceFragment(new CalificacionesEstudiantesFragment(),args);
                     break;
                 case R.id.perfilestudiantes:
-                    replaceFragment(new PerfilEstudiantesFragment());
+                    replaceFragment(new PerfilEstudiantesFragment(),args);
                     break;
             }
             return true;
         });
     }
 
-    private void replaceFragment(Fragment fragment){
+    private void replaceFragment(Fragment fragment, Bundle bundle){
 
+        fragment.setArguments(bundle);
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_layout_estudiantes, fragment);

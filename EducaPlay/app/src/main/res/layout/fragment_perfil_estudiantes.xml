@@ -33,15 +33,15 @@
 
         </androidx.cardview.widget.CardView>
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="104dp"
-            android:src="@drawable/imagen_monitor"
-            app:civ_border_width="2dp"
-            app:civ_border_color="#DFDFDF"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/imagen_monitor"
+        app:civ_border_color="#DFDFDF"
+        app:civ_border_width="2dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:text="@string/txv_prueba_nivel"
+                    android:text="@string/txv_datos_personales"
                     android:textColor="@color/black" />
             </RelativeLayout>
 
@@ -75,6 +75,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/idnombreusuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -85,6 +86,7 @@
                     android:textColor="#757575" />
 
                 <TextView
+                    android:id="@+id/idcorreousuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -95,6 +97,7 @@
                     android:textColor="#757575" />
 
                 <TextView
+                    android:id="@+id/idcodigousuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -109,6 +112,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/idcambiarpassusuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
@@ -119,6 +123,7 @@
             android:text="@string/btn_cambiar_contrasenia" />
 
         <Button
+            android:id="@+id/idcambiarfotousuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"

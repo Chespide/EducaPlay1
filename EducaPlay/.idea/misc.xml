@@ -131,7 +131,7 @@
         <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-hdpi/activity_solicitud_docentes.xml" value="0.430859375" />
         <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_iniciar_docentes.xml" value="1.4745989304812834" />
         <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_iniciar_sesion_usuario.xml" value="2.6893939393939394" />
-        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_inicio.xml" value="3.446875" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_inicio.xml" value="0.8808290155440415" />
         <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_registro_docentes.xml" value="2.6893939393939394" />
         <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_registro_usuario.xml" value="2.6893939393939394" />
         <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_solicitud_docentes.xml" value="3.446875" />
@@ -168,6 +168,10 @@
         <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_registro_usuario.xml" value="0.47136752136752136" />
         <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_solicitud_docentes.xml" value="0.47136752136752136" />
         <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_calificaciones_estudiantes.xml" value="0.47136752136752136" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_perfil_estudiantes.xml" value="0.33" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_prueba_estudiante.xml" value="0.5" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_pruebas_docentes.xml" value="0.5" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_pruebas_estudiantes.xml" value="0.5" />
       </map>
     </option>
   </component>

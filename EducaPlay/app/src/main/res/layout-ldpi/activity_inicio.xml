@@ -9,20 +9,6 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="301dp"
-        android:layout_height="132dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="10dp"
-        android:contentDescription="@string/ImagenNombreEducaPlay"
-        app:srcCompat="@drawable/imagen_nombre_educaplay" />
-
-    <ImageView
         android:id="@+id/imageView2"
         android:layout_width="155dp"
         android:layout_height="140dp"

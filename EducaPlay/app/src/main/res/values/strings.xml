@@ -19,7 +19,7 @@
     <string name="edt_documento">Introduce tu documento de identidad</string>
     <string name="btn_registrar_usuario">Registrate</string>
     <string name="txv_quieres_unirte_como_docente">¿Quieres unirte como docente?</string>
-    <string name="txv_contactanos">Contactanos</string>
+    <string name="txv_contactanos">Registrate</string>
     <string name="txv_llena_campos">A continuacion llena los siguientes campos.</string>
     <string name="btn_enviar_datos">Enviar datos</string>
     <string name="edt_el_nombre">Introduce el nombre</string>
@@ -46,7 +46,7 @@
     <string name="txv_puntaje">Puntaje:</string>
     <string name="txv_nombre">Nombre:</string>
     <string name="txv_correo">Correo:</string>
-    <string name="txv_ciudad">Ciudad:</string>
+    <string name="txv_ciudad">Documento:</string>
     <string name="btn_cambiar_contrasenia">Cambiar contraseña</string>
     <string name="btn_cambiar_foto_de_perfil">Cambiar foto de perfil</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -82,4 +82,5 @@
     <string name="chb_b">B</string>
     <string name="chb_c">C</string>
     <string name="chb_d">D</string>
+    <string name="txv_datos_personales">Datos personales:</string>
 </resources>
