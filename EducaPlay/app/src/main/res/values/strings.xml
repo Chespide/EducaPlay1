@@ -61,4 +61,10 @@
     <string name="btn_nueva_pregunta">Nueva pregunta</string>
     <string name="btn_editar_mis_preguntas">Editar mis preguntas</string>
     <string name="btn_aniadir_a_alguien_como_docente">Añadir a alguien como docente</string>
+    <string name="txv_pregunta_1">Pregunta #1</string>
+    <string name="btn_respuesta_a">A:</string>
+    <string name="btn_respuesta_b">B:</string>
+    <string name="btn_respuesta_c">C:</string>
+    <string name="btn_respuesta_d">D:</string>
+    <string name="btn_siguiente">Siguiente</string>
 </resources>

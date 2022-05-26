@@ -7,7 +7,6 @@
     android:background="#EADCFA"
     tools:context=".PruebasEstudiantesFragment">
 
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="90dp"
@@ -21,13 +20,11 @@
         android:layout_marginBottom="712dp"
         android:backgroundTint="#7846CC">
 
-
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/pruebas_bar"
             android:contentDescription="@string/ImagenNombreEducaPlay" />
-
 
     </androidx.cardview.widget.CardView>
 
