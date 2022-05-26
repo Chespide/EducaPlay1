@@ -16,7 +16,7 @@ public class InicioDocentesFragment extends Fragment {
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    Button btnnuevaentrada, bfeet;
+    Button btnnuevaentrada;
     private String mParam1;
     private String mParam2;
 
@@ -51,7 +51,10 @@ public class InicioDocentesFragment extends Fragment {
         btnnuevaentrada.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new NuevaEntradaDocentesFragment();
+                NuevaEntradaDocentesFragment fragment = new NuevaEntradaDocentesFragment();
+                //Bundle args = new Bundle();
+                //args.putInt(NuevaEntradaDocentesFragment.);
+
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.frame_layout_docentes, fragment);
