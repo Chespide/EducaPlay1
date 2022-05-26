@@ -81,10 +81,8 @@
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_cardview_up.xml" value="0.2105" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_cardview_up_cal.xml" value="0.1545" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_cardview_up_perf.xml" value="0.143" />
-        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_checkbox.xml" value="0.2105" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_imageview.xml" value="0.208" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/custom_searchview.xml" value="0.2105" />
-        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/cutom_card.xml" value="0.1315" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1185" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/drawable/icono_buscar.xml" value="0.2115" />
@@ -105,24 +103,65 @@
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_registro_usuario.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_calificaciones.xml" value="0.25" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_calificaciones_estudiantes.xml" value="0.1675213675213675" />
-        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_entrada_estudiantes.xml" value="0.15" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_inicio.xml" value="0.2" />
-        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_inicio_docentes.xml" value="0.16" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_inicio_docentes.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_inicio_estudiantes.xml" value="0.18" />
-        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_nueva_entrada_docentes.xml" value="0.16" />
-        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_nueva_pregunta_docentes.xml" value="0.2" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_perfil.xml" value="0.1" />
-        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_perfil_docentes.xml" value="0.18" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_perfil_docentes.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_perfil_estudiantes.xml" value="0.1675213675213675" />
-        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_prueba_estudiante.xml" value="0.16" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_pruebas.xml" value="0.1" />
-        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_pruebas_docentes.xml" value="0.18" />
+        <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_pruebas_docentes.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_pruebas_estudiantes.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/menu/bottom_nav_menu_docentes.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/menu/bottom_nav_menu_estudiantes.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/Johan Lozano/Documents/GitHub/EducaPlay1/EducaPlay/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-hdpi/activity_iniciar_docentes.xml" value="0.21097934200459068" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-hdpi/activity_iniciar_sesion_usuario.xml" value="0.430859375" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-hdpi/activity_inicio.xml" value="0.430859375" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-hdpi/activity_registro_docentes.xml" value="0.430859375" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-hdpi/activity_registro_usuario.xml" value="0.430859375" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-hdpi/activity_solicitud_docentes.xml" value="0.430859375" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_iniciar_docentes.xml" value="1.4745989304812834" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_iniciar_sesion_usuario.xml" value="2.6893939393939394" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_inicio.xml" value="3.446875" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_registro_docentes.xml" value="2.6893939393939394" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_registro_usuario.xml" value="2.6893939393939394" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-ldpi/activity_solicitud_docentes.xml" value="3.446875" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-mdpi/activity_iniciar_docentes.xml" value="1.0327715355805243" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-mdpi/activity_iniciar_sesion_usuario.xml" value="2.063953488372093" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-mdpi/activity_inicio.xml" value="2.2979166666666666" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-mdpi/activity_registro_docentes.xml" value="2.063953488372093" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-mdpi/activity_registro_usuario.xml" value="2.063953488372093" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-mdpi/activity_solicitud_docentes.xml" value="2.2979166666666666" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xhdpi/activity_iniciar_docentes.xml" value="0.26236917221693623" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xhdpi/activity_iniciar_sesion_usuario.xml" value="0.4551282051282051" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xhdpi/activity_inicio.xml" value="0.53857421875" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xhdpi/activity_registro_docentes.xml" value="0.4551282051282051" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xhdpi/activity_registro_usuario.xml" value="0.4551282051282051" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xhdpi/activity_solicitud_docentes.xml" value="0.53857421875" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xxhdpi/activity_iniciar_docentes.xml" value="0.23036758563074353" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xxhdpi/activity_iniciar_sesion_usuario.xml" value="0.47136752136752136" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xxhdpi/activity_inicio.xml" value="0.47136752136752136" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xxhdpi/activity_registro_docentes.xml" value="0.47136752136752136" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xxhdpi/activity_registro_usuario.xml" value="0.47136752136752136" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xxhdpi/activity_solicitud_docentes.xml" value="0.47136752136752136" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xxxhdpi/activity_iniciar_docentes.xml" value="0.21097934200459068" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xxxhdpi/activity_iniciar_sesion_usuario.xml" value="0.430859375" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xxxhdpi/activity_inicio.xml" value="0.430859375" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xxxhdpi/activity_registro_docentes.xml" value="0.430859375" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xxxhdpi/activity_registro_usuario.xml" value="0.430859375" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout-xxxhdpi/activity_solicitud_docentes.xml" value="0.430859375" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_iniciar_docentes.xml" value="0.23036758563074353" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_iniciar_sesion_usuario.xml" value="0.47136752136752136" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_inicio.xml" value="0.47136752136752136" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_menus_de_docentes.xml" value="0.47136752136752136" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_menus_de_estudiante.xml" value="0.47136752136752136" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_registro_docentes.xml" value="0.47136752136752136" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_registro_usuario.xml" value="0.47136752136752136" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/activity_solicitud_docentes.xml" value="0.47136752136752136" />
+        <entry key="..\:/Users/olmio/Desktop/EducaPlay1/EducaPlay/app/src/main/res/layout/fragment_calificaciones_estudiantes.xml" value="0.47136752136752136" />
       </map>
     </option>
   </component>
