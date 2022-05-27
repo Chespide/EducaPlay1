@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +17,7 @@ public class InicioDocentesFragment extends Fragment {
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    Button btnnuevaentrada;
+    Button nuevaentrada;
     private String mParam1;
     private String mParam2;
 
@@ -47,19 +48,17 @@ public class InicioDocentesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_inicio_docentes, container, false);
-        btnnuevaentrada = (Button) view.findViewById(R.id.btnnuevaentrada);
-        btnnuevaentrada.setOnClickListener(new View.OnClickListener() {
+        nuevaentrada = view.findViewById(R.id.btnnuevaentrada);
+        nuevaentrada.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NuevaEntradaDocentesFragment fragment = new NuevaEntradaDocentesFragment();
-                //Bundle args = new Bundle();
-                //args.putInt(NuevaEntradaDocentesFragment.);
-
+                Log.e("TAG","iniciando fragment");
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.frame_layout_docentes, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                FragmentTransaction transaction = fragmentManager.beginTransaction();
+                transaction.setReorderingAllowed(true);
+                transaction.replace(R.id.frame_layout_docentes, NuevaEntradaDocentesFragment.newInstance("",""));
+                transaction.commit();
+                Log.e("TAG","Termino fragmento");
             }
         });
         return view;

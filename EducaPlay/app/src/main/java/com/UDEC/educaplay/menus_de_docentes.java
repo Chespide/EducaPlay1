@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.UDEC.educaplay.databinding.ActivityMenusDeDocentesBinding;
 
@@ -23,8 +24,9 @@ public class menus_de_docentes extends AppCompatActivity {
         String documentousuario = bundle.getString("Documento");
         String id_Usuario = bundle.getString("id");
         Bundle args = new Bundle();
-        args.putString("Documento", documentousuario);
         args.putString("id", id_Usuario);
+        args.putString("Documento", documentousuario);
+
 
         replaceFragment(new InicioDocentesFragment(),args);
 
