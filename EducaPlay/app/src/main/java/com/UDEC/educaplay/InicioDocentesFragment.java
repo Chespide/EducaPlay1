@@ -52,13 +52,11 @@ public class InicioDocentesFragment extends Fragment {
         nuevaentrada.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.e("TAG","iniciando fragment");
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
                 transaction.setReorderingAllowed(true);
                 transaction.replace(R.id.frame_layout_docentes, NuevaEntradaDocentesFragment.newInstance("",""));
                 transaction.commit();
-                Log.e("TAG","Termino fragmento");
             }
         });
         return view;

@@ -24,16 +24,14 @@ import java.sql.SQLException;
 
 public class NuevaEntradaDocentesFragment extends Fragment {
 
-    EditText titulo, descripcion, texto;
+    EditText titulo, descripcion, texto, nivel;
     Button btnnuevaentrada;
-    String nivel;
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
     private String mParam1;
     private String mParam2;
-    private String id_Usuario;
 
     public NuevaEntradaDocentesFragment() {
 
@@ -44,7 +42,6 @@ public class NuevaEntradaDocentesFragment extends Fragment {
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
         return fragment;
     }
 
@@ -54,8 +51,6 @@ public class NuevaEntradaDocentesFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-            id_Usuario = getArguments().getString("Documento");
-            Log.i("Valor:", String.valueOf(id_Usuario));
         }
     }
 
@@ -66,7 +61,7 @@ public class NuevaEntradaDocentesFragment extends Fragment {
         titulo = view.findViewById(R.id.entradatitulo);
         descripcion = view.findViewById(R.id.entradadescripcion);
         texto = view.findViewById(R.id.entradatexto);
-        nivel = "1";
+        nivel = view.findViewById(R.id.nivelnuevaentrada);
         btnnuevaentrada = view.findViewById(R.id.btncrearentrada);
         btnnuevaentrada.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,6 +72,7 @@ public class NuevaEntradaDocentesFragment extends Fragment {
                 transaction.setReorderingAllowed(true);
                 transaction.replace(R.id.frame_layout_docentes, InicioDocentesFragment.newInstance("",""));
                 transaction.commit();
+
             }
         });
 
@@ -97,12 +93,11 @@ public class NuevaEntradaDocentesFragment extends Fragment {
     }
     public void nuevaentrada(){
         try{
-            PreparedStatement pst = conexionBD().prepareStatement("insert into Entradas values(?,?,?,?,?,?)");
-            pst.setString(1,nivel);
-            pst.setString(2,id_Usuario);
-            pst.setString(3,titulo.getText().toString());
+            PreparedStatement pst = conexionBD().prepareStatement("insert into Entradas values(?,?,?,?)");
+            pst.setString(1,nivel.getText().toString());
+            pst.setString(2,titulo.getText().toString());
+            pst.setString(3,texto.getText().toString());
             pst.setString(4,descripcion.getText().toString());
-            pst.setString(5,texto.getText().toString());
             pst.executeUpdate();
             Toast.makeText(getContext(),"REGISTRO AGREGADO CORRECTAMENTE",Toast.LENGTH_SHORT).show();
         }catch (SQLDataException e){

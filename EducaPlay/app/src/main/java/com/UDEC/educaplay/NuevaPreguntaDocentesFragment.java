@@ -3,40 +3,42 @@ package com.UDEC.educaplay;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.os.StrictMode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.Toast;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link NuevaPreguntaDocentesFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLDataException;
+import java.sql.SQLException;
+
 public class NuevaPreguntaDocentesFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    EditText nivelpregunta, pregunta, a, b, c, d;
+    CheckBox a1,b1,c1,d1;
+    Button agregarnuevapregunta;
+    String verdadera;
+
+
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
     public NuevaPreguntaDocentesFragment() {
-        // Required empty public constructor
+
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment NuevaPreguntaDocentesFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static NuevaPreguntaDocentesFragment newInstance(String param1, String param2) {
         NuevaPreguntaDocentesFragment fragment = new NuevaPreguntaDocentesFragment();
         Bundle args = new Bundle();
@@ -58,7 +60,79 @@ public class NuevaPreguntaDocentesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_nueva_pregunta_docentes, container, false);
+        View view = inflater.inflate(R.layout.fragment_nueva_pregunta_docentes, container, false);
+        nivelpregunta = view.findViewById(R.id.nivelnuevapregunta);
+        pregunta = view.findViewById(R.id.nuevapregunta);
+        a1 = view.findViewById(R.id.check_a);
+        b1 = view.findViewById(R.id.check_b);
+        c1 = view.findViewById(R.id.check_c);
+        d1 = view.findViewById(R.id.check_d);
+
+        a = view.findViewById(R.id.respuesta1);
+        b = view.findViewById(R.id.respuesta2);
+        c = view.findViewById(R.id.respuesta3);
+        d = view.findViewById(R.id.respuesta4);
+        agregarnuevapregunta = view.findViewById(R.id.crearpregunta);
+        agregarnuevapregunta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                validar();
+                nuevapregunta();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = fragmentManager.beginTransaction();
+                transaction.setReorderingAllowed(true);
+                transaction.replace(R.id.frame_layout_docentes, InicioDocentesFragment.newInstance("",""));
+                transaction.commit();
+            }
+        });
+
+
+        return view;
+    }
+    public Connection conexionBD(){
+        Connection conexion = null;
+        try {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+            Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
+            conexion = DriverManager.getConnection("jdbc:jtds:sqlserver://gutgara.ddns.net;databaseName=EducaPlay;user=gutgara;password=VAuX2v_1xx0_T9w;");
+
+        }catch (Exception e){
+            Toast.makeText(getContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
+        }
+        return conexion;
+    }
+    public void nuevapregunta(){
+        try{
+            PreparedStatement pst = conexionBD().prepareStatement("insert into Preguntas values(?,?,?,?,?,?,?)");
+            pst.setString(1,nivelpregunta.getText().toString());
+            pst.setString(2,pregunta.getText().toString());
+            pst.setString(3,a.getText().toString());
+            pst.setString(4,b.getText().toString());
+            pst.setString(5,c.getText().toString());
+            pst.setString(6,d.getText().toString());
+            pst.setString(7,verdadera);
+            pst.executeUpdate();
+            Toast.makeText(getContext(),"REGISTRO AGREGADO CORRECTAMENTE",Toast.LENGTH_SHORT).show();
+        }catch (SQLDataException e){
+            Toast.makeText(getContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+    public void validar(){
+        if(a1.isChecked()){
+            verdadera = "1";
+        }
+        if(b1.isChecked()){
+            verdadera = "2";
+        }
+        if(c1.isChecked()){
+            verdadera = "3";
+        }
+        if(d1.isChecked()){
+            verdadera = "4";
+        }
+
     }
 }

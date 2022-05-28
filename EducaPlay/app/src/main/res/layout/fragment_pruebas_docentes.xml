@@ -30,26 +30,16 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/crearnuevapregunta"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="15dp"
-        android:background="@drawable/custom_button_perfil"
-        android:layout_marginTop="100dp"
-        android:text="@string/btn_nueva_pregunta" />
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="90dp"
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:background="@drawable/custom_button_perfil"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="15dp"
-        android:text="@string/btn_editar_mis_preguntas" />
+        android:text="@string/btn_nueva_pregunta" />
 
     <ScrollView
         android:id="@+id/scrollpruebas"

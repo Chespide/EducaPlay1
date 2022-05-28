@@ -138,11 +138,11 @@
         android:layout_marginTop="909dp"
         android:layout_marginBottom="133dp"
         android:background="@drawable/custom_button_rosa"
+        android:onClick="registrarsedocente"
         android:text="@string/btn_registralo"
         android:textColor="#FFFFFF"
         android:textSize="10sp"
         app:backgroundTint="@null"
-        android:onClick="registrarsedocente"
         tools:ignore="SmallSp,TextContrastCheck,TouchTargetSizeCheck" />
 
 
