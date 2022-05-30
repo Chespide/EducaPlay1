@@ -46,6 +46,7 @@
             android:background="@drawable/custom_cardview_up_cal">
 
             <TextView
+                android:id="@+id/titulo_contenido_estudiante"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -68,6 +69,7 @@
                 android:src="@drawable/imagen_medalla" />
 
             <TextView
+                android:id="@+id/Texto_contenido_estudiante"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"

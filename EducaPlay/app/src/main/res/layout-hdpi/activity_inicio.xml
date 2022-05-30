@@ -23,6 +23,7 @@
         app:srcCompat="@drawable/icono_principal" />
 
     <Button
+        android:onClick="estudiante"
         android:layout_width="480dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -35,6 +36,7 @@
         app:backgroundTint="@null" />
 
     <Button
+        android:onClick="docente"
         android:layout_width="480dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

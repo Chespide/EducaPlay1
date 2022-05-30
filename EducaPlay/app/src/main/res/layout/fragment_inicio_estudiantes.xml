@@ -63,16 +63,21 @@
 
         </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/scrollinicio"
+    <ScrollView
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="120dp">
 
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/scrollinicio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </androidx.recyclerview.widget.RecyclerView>
+            android:orientation="vertical">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
 
 </RelativeLayout>

@@ -1,22 +1,37 @@
 package com.UDEC.educaplay;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
 
 public class InicioDocentesFragment extends Fragment {
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    ArrayList<Contenido> listDatos;
+    RecyclerView recycler;
+    Connection conn;
+    String titulo, Descripcion, Contenido, Nivel, id;
     Button nuevaentrada;
     private String mParam1;
     private String mParam2;
@@ -49,6 +64,22 @@ public class InicioDocentesFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_inicio_docentes, container, false);
         nuevaentrada = view.findViewById(R.id.btnnuevaentrada);
+        listDatos = new ArrayList<>();
+        recycler = view.findViewById(R.id.scrolliniciodocentes);
+        recycler.setLayoutManager(new LinearLayoutManager(getContext()));
+        new checkLogin().execute("");
+        Adapter1 adapter1=new Adapter1(listDatos);
+        recycler.setAdapter(adapter1);
+        adapter1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = fragmentManager.beginTransaction();
+                transaction.setReorderingAllowed(true);
+                transaction.replace(R.id.frame_layout_docentes, EntradaEstudiantesFragment.newInstance(listDatos.get(recycler.getChildAdapterPosition(view)).getTitulo(),listDatos.get(recycler.getChildAdapterPosition(view)).getContenido()));
+                transaction.commit();
+            }
+        });
         nuevaentrada.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,8 +89,65 @@ public class InicioDocentesFragment extends Fragment {
                 transaction.replace(R.id.frame_layout_docentes, NuevaEntradaDocentesFragment.newInstance("",""));
                 transaction.commit();
             }
-        });
+        }
+        );
         return view;
+    }
+    public Connection conexionBD() {
+        Connection conexion = null;
+        try {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+            Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
+            conexion = DriverManager.getConnection("jdbc:jtds:sqlserver://gutgara.ddns.net;databaseName=EducaPlay;user=gutgara;password=VAuX2v_1xx0_T9w");
+        } catch (Exception e) {
+            Toast.makeText(getContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+        return conexion;
+    }
+    public class checkLogin extends AsyncTask<String, String, String> {
+
+        String z = null;
+        Boolean isSuccess = false;
+
+        @Override
+        protected void onPreExecute() {
+
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+        }
+
+        @Override
+        protected String doInBackground(String... strings) {
+            conn = conexionBD();
+            if (conn == null) {
+                Toast.makeText(getContext(), "Revisa tu conexion", Toast.LENGTH_LONG).show();
+            } else {
+                try {
+
+                    String sql = "SELECT id_Entrada,Titulo, Descripcion, Contenido, id_Nivel FROM Entradas";
+                    Statement stmt = conn.createStatement();
+                    ResultSet rs = stmt.executeQuery(sql);
+
+                    while (rs.next()){
+                        id = rs.getString(1);
+                        titulo = rs.getString(2);
+                        Descripcion = rs.getString(3);
+                        Contenido = rs.getString(4);
+                        Nivel = rs.getString(5);
+                        Contenido contenido =new Contenido(id,titulo,Descripcion,Contenido,Nivel);
+                        listDatos.add(contenido);
+                    }
+
+                } catch (Exception e) {
+                    Log.e("SQL Error :", e.getMessage());
+                }
+            }
+            return z;
+        }
     }
 
 }

@@ -1,23 +1,28 @@
 package com.UDEC.educaplay;
 
-public class Contenido {
-    private int id;
-    private String titulo;
-    private String texto;
-    private String img;
+import androidx.annotation.NonNull;
 
-    public Contenido(int id, String titulo, String texto, String img) {
+public class Contenido {
+
+    private String id, titulo, texto, Contenido, nivel;
+
+
+    public Contenido(String id, String titulo, String texto,String contenido,String nivel){
         this.id = id;
+        this.Contenido = contenido;
+        this.nivel = nivel;
         this.titulo = titulo;
         this.texto = texto;
-        this.img = img;
+
     }
 
-    public int getId() {
+
+
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -37,11 +42,20 @@ public class Contenido {
         this.texto = texto;
     }
 
-    public String getImg() {
-        return img;
+    public String getContenido() {
+        return Contenido;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setContenido(String texto) {
+        this.Contenido = Contenido;
     }
+
+    public String getNivel() {
+        return nivel;
+    }
+
+    public void setNivel(String texto) {
+        this.nivel = nivel;
+    }
+
 }

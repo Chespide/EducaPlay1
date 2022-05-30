@@ -23,6 +23,7 @@
         app:srcCompat="@drawable/icono_principal" />
 
     <Button
+
         android:layout_width="113dp"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
