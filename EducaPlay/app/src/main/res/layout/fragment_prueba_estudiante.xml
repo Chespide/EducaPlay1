@@ -106,7 +106,7 @@
 
 
     <CheckBox
-        android:id="@+id/respuestaD"
+        android:id="@+id/respuestaC"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
@@ -121,7 +121,7 @@
 
 
     <CheckBox
-        android:id="@+id/respuestaC"
+        android:id="@+id/respuestaD"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
@@ -130,7 +130,7 @@
         android:layout_marginTop="523dp"
         android:background="@drawable/custom_card"
         android:paddingHorizontal="10dp"
-        android:text="@string/btn_respuesta_c"
+        android:text="@string/btn_respuesta_d"
         android:textAlignment="textStart"
         android:textColor="#000000" />
 

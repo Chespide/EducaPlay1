@@ -113,7 +113,6 @@ public class InicioEstudiantesFragment extends Fragment {
                 Nivel = rs.getString(5);
                 Contenido contenido =new Contenido(id,titulo,Descripcion,Contenido,Nivel);
                 listDatos.add(contenido);
-                Log.i("vista",String.valueOf(titulo));
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();

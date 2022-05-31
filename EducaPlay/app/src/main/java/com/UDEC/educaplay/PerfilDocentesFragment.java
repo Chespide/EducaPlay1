@@ -96,7 +96,6 @@ public class PerfilDocentesFragment extends Fragment {
                         String nomusuario = nom.getText().toString();
                         nomusuario = nomusuario + " " + rs.getString(1);
                         nom.setText(nomusuario);
-                        Log.i("Valor2:", String.valueOf(nomusuario));
 
                         String correousuario = correo.getText().toString();
                         correousuario = correousuario + " " + rs.getString(3);

@@ -39,7 +39,7 @@
     <string name="edtx_lorem_ipsum">lorem ipsum</string>
     <string name="txv_escoge_el_nivel_de_la_prueba">Escoge el nivel de la prueba</string>
     <string name="txv_puntaje_obtenido_en_cada_prueba">Puntaje obtenido en cada prueba</string>
-    <string name="txv_prueba_nivel">PRUEBA NIVEL # 1</string>
+    <string name="txv_prueba_nivel">PRUEBA NIVEL # </string>
     <string name="txv_cantidad_de_preguntas">Cantidad de preguntas:</string>
     <string name="txv_correctas">Correctas:</string>
     <string name="txv_incorrectas">Incorrectas:</string>

@@ -56,19 +56,23 @@
             tools:ignore="UselessParent">
 
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/nivel1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
                 android:contentDescription="@string/ImagenNombreEducaPlay"
+                android:scaleType="centerInside"
                 android:src="@drawable/numerouno" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/nivel2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:scaleType="centerInside"
                 android:contentDescription="@string/ImagenNombreEducaPlay"
                 android:src="@drawable/numerodos" />
 
@@ -82,19 +86,23 @@
             tools:ignore="UselessParent">
 
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/nivel3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:scaleType="centerInside"
                 android:contentDescription="@string/ImagenNombreEducaPlay"
                 android:src="@drawable/numerotres" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/nivel4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:scaleType="centerInside"
                 android:contentDescription="@string/ImagenNombreEducaPlay"
                 android:src="@drawable/numerocuatro" />
 
@@ -108,19 +116,23 @@
             tools:ignore="UselessParent">
 
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/nivel5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:scaleType="centerInside"
                 android:contentDescription="@string/ImagenNombreEducaPlay"
                 android:src="@drawable/numerocinco" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/nivel6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:scaleType="centerInside"
                 android:contentDescription="@string/ImagenNombreEducaPlay"
                 android:src="@drawable/numeroseis" />
 
