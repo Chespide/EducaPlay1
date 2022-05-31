@@ -68,7 +68,7 @@ public class InicioEstudiantesFragment extends Fragment {
         listDatos = new ArrayList<>();
         recycler = view.findViewById(R.id.scrollinicio);
         recycler.setLayoutManager(new LinearLayoutManager(getContext()));
-        new checkLogin().execute("");
+        inicioestudiantes();
         Adapter1 adapter1=new Adapter1(listDatos);
         recycler.setAdapter(adapter1);
         adapter1.setOnClickListener(new View.OnClickListener() {
@@ -98,47 +98,25 @@ public class InicioEstudiantesFragment extends Fragment {
         }
         return conexion;
     }
-    public class checkLogin extends AsyncTask<String, String, String> {
+    public  void inicioestudiantes(){
+        conn = conexionBD();
+        try {
+            String sql = "SELECT id_Entrada,Titulo, Descripcion, Contenido, id_Nivel FROM Entradas";
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
 
-        String z = null;
-
-        @Override
-        protected void onPreExecute() {
-
-        }
-
-        @Override
-        protected void onPostExecute(String s) {
-            super.onPostExecute(s);
-        }
-
-        @Override
-        protected String doInBackground(String... strings) {
-            conn = conexionBD();
-            if (conn == null) {
-                Toast.makeText(getContext(), "Revisa tu conexion", Toast.LENGTH_LONG).show();
-            } else {
-                try {
-
-                    String sql = "SELECT id_Entrada, Titulo, Descripcion, Contenido, id_Nivel FROM Entradas";
-                    Statement stmt = conn.createStatement();
-                    ResultSet rs = stmt.executeQuery(sql);
-
-                    while (rs.next()){
-                        id = rs.getString(1);
-                        titulo = rs.getString(2);
-                        Descripcion = rs.getString(3);
-                        Contenido = rs.getString(4);
-                        Nivel = rs.getString(5);
-                        Contenido contenido =new Contenido(id,titulo,Descripcion,Contenido,Nivel);
-                        listDatos.add(contenido);
-                    }
-
-                } catch (Exception e) {
-                    Log.e("SQL Error :", e.getMessage());
-                }
+            while (rs.next()){
+                id = rs.getString(1);
+                titulo = rs.getString(2);
+                Descripcion = rs.getString(3);
+                Contenido = rs.getString(4);
+                Nivel = rs.getString(5);
+                Contenido contenido =new Contenido(id,titulo,Descripcion,Contenido,Nivel);
+                listDatos.add(contenido);
+                Log.i("vista",String.valueOf(titulo));
             }
-            return z;
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
     }
 }

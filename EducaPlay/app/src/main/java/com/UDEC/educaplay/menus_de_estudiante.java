@@ -55,7 +55,9 @@ public class menus_de_estudiante extends AppCompatActivity {
         fragment.setArguments(bundle);
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.setReorderingAllowed(false);
         fragmentTransaction.replace(R.id.frame_layout_estudiantes, fragment);
+        fragmentTransaction.show(fragment);
         fragmentTransaction.commit();
 
     }

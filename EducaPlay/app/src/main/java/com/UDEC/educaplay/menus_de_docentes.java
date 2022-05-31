@@ -54,6 +54,7 @@ public class menus_de_docentes extends AppCompatActivity {
         fragment.setArguments(bundle);
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.setReorderingAllowed(false);
         fragmentTransaction.replace(R.id.frame_layout_docentes, fragment);
         fragmentTransaction.commit();
 
