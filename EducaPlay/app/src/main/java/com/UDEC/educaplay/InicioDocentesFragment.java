@@ -81,7 +81,6 @@ public class InicioDocentesFragment extends Fragment {
                 transaction.commit();
             }
         });
-
         nuevaentrada = view.findViewById(R.id.btnnuevaentrada);
         nuevaentrada.setOnClickListener(new View.OnClickListener() {
             @Override
