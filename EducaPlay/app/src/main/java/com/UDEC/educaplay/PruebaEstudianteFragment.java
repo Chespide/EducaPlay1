@@ -131,7 +131,8 @@ public class PruebaEstudianteFragment extends Fragment {
         conn1 = conexionBD();
         try {
             cambio = false;
-            String sql = "SELECT Pregunta, A, B, C, D, Verdadera FROM Preguntas WHERE id_Nivel = 1";
+            Integer.parseInt(mParam1);
+            String sql = "SELECT Pregunta, A, B, C, D, Verdadera FROM Preguntas WHERE id_Nivel = '"+mParam1+"'";
             Statement stmt = conn1.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
 
@@ -165,16 +166,15 @@ public class PruebaEstudianteFragment extends Fragment {
     public void cargarrespuesta(float puntaje, int aciertos, int fallos, int cant){
         puntaje = puntaje / cant;
         conn1 = conexionBD();
-        try {
-            String sql = "SELECT id_Prueba FROM Calificaciones WHERE id_Usuario = '"+mParam2+"'";
+        /*try {
+            Integer.parseInt(mParam2);
+            String sql = "SELECT Nota FROM Calificaciones WHERE id_Usuario = '"+mParam2+"' AND id_Prueba = '"+mParam1+1+"'";
             Statement stmt = conn1.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             aux1 = rs.getString(1);
-            aux2 = mParam2;
-            Log.i("id_prueba obtenido:",String.valueOf(aux1));
-            Log.i("id_prueba generado:",String.valueOf(aux2));
+            Log.i("valor-",String.valueOf(aux1));
 
-            if(Objects.equals(aux1, aux2)){
+            if(aux1 != null){
                 try{
                     PreparedStatement pst = conexionBD().prepareStatement("UPDATE table Calificaciones SET Aciertos = '"+aciertos+"',Errores = '"+fallos+"',Nota = '"+puntaje+"' WHERE id_Usuario = '"+mParam2+"'");
                     pst.setInt(1,Integer.parseInt(mParam2));
@@ -190,7 +190,7 @@ public class PruebaEstudianteFragment extends Fragment {
                     throwables.printStackTrace();
                 }
 
-            }else {
+            }else {*/
                 try{
                     PreparedStatement pst = conexionBD().prepareStatement("insert into Calificaciones values(?,?,?,?,?)");
                     pst.setInt(1,Integer.parseInt(mParam2));
@@ -205,11 +205,11 @@ public class PruebaEstudianteFragment extends Fragment {
                 } catch (SQLException throwables) {
                     throwables.printStackTrace();
                 }
-            }
+            }/*
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-    }
+    }*/
     public String validar(){
         if(tex1.isChecked()){
             return "1";
