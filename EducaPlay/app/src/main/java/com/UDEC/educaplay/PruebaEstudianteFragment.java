@@ -1,5 +1,6 @@
 package com.UDEC.educaplay;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -78,6 +79,7 @@ public class PruebaEstudianteFragment extends Fragment {
         tex4 = view.findViewById(R.id.respuestaD);
         btnsiguiente = view.findViewById(R.id.btn_siguiente_pregunta);
         btnsiguiente.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
 
@@ -123,6 +125,7 @@ public class PruebaEstudianteFragment extends Fragment {
         }
         return conexion;
     }
+    @SuppressLint("SetTextI18n")
     public void inicioprueba(){
 
         conn1 = conexionBD();
@@ -149,11 +152,11 @@ public class PruebaEstudianteFragment extends Fragment {
             tex3.setText("C: "+listapreguntas.get(position).getTex3());
             tex4.setText("D: "+listapreguntas.get(position).getTex4());
             respuesta = validar();
-            if(respuesta == listapreguntas.get(position).getTex5()){
+            if (!Objects.equals(respuesta, listapreguntas.get(position).getTex5())) {
+                fallos = fallos + 1;
+            } else {
                 aciertos = aciertos + 1;
                 puntajerespuesta = puntajerespuesta + 100;
-            }else{
-                fallos = fallos + 1;
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
@@ -163,7 +166,7 @@ public class PruebaEstudianteFragment extends Fragment {
         puntaje = puntaje / cant;
         conn1 = conexionBD();
         try {
-            String sql = "SELECT id_Prueba FROM Calificaciones WHERE id_Usuario = 5";
+            String sql = "SELECT id_Prueba FROM Calificaciones WHERE id_Usuario = '"+mParam2+"'";
             Statement stmt = conn1.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             aux1 = rs.getString(1);
@@ -173,7 +176,7 @@ public class PruebaEstudianteFragment extends Fragment {
 
             if(Objects.equals(aux1, aux2)){
                 try{
-                    PreparedStatement pst = conexionBD().prepareStatement("UPDATE table Calificaciones SET Aciertos = '"+aciertos+"',Errores = '"+fallos+"',Nota = '"+puntaje+"'");
+                    PreparedStatement pst = conexionBD().prepareStatement("UPDATE table Calificaciones SET Aciertos = '"+aciertos+"',Errores = '"+fallos+"',Nota = '"+puntaje+"' WHERE id_Usuario = '"+mParam2+"'");
                     pst.setInt(1,Integer.parseInt(mParam2));
                     pst.setInt(2,Integer.parseInt(mParam1)+1);
                     pst.setInt(3,aciertos);
